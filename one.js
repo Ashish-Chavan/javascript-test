@@ -23,9 +23,7 @@ export function newGeneration(cells) {
       if (i > 0 && j < cells[i].length - 1)
         neighbourCount += cells[i - 1][j + 1]
       if (j > 0) neighbourCount += cells[i][j - 1]
-      if (j < cells[i].length - 1) neighbourCount += cells[i][j + 1]
-      if (i < cells.length - 1 && j > 0) neighbourCount += cells[i + 1][j - 1]
-      if (i < cells.length - 1) neighbourCount += cells[i + 1][j]
+     
       if (i < cells.length - 1 && j < cells[i].length - 1)
         neighbourCount += cells[i + 1][j + 1]
 
